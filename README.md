@@ -124,13 +124,13 @@ Backend (FastAPI)
 ## Setup & Installation
 
 ### 1. Clone the repository
-bash
+---bash
 git clone https://github.com/<username>/<repo-name>.git
 cd <repo-name>
 
 
 ### 2. Create a virtual environment
-bash
+---bash
 python -m venv venv
 # Activate virtual environment
 # Windows
