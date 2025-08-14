@@ -124,12 +124,16 @@ Backend (FastAPI)
 ## Setup & Installation
 
 ### 1. Clone the repository
-```bash
+bash
 git clone https://github.com/<username>/<repo-name>.git
 cd <repo-name>
 
+---
 
-2. Create a virtual environment
+
+
+### 2. Create a virtual environment
+bash
 python -m venv venv
 # Activate virtual environment
 # Windows
@@ -138,10 +142,11 @@ venv\Scripts\activate
 source venv/bin/activate
 
 
-3. Install dependencies
+### 3. Install dependencies
+bash
 pip install -r requirements.txt
 
-4. Create .env file in project root
+### 4. Create .env file in project root
 MURF_API_KEY=your_murf_api_key
 ASSEMBLY_API_KEY=your_assemblyai_api_key
 GEMINI_API_KEY=your_gemini_api_key
