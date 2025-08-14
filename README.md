@@ -169,18 +169,16 @@ uvicorn app:app --reload
 
 ## 📂 Project Structure
 ```bash
-30-days-of-voice-agents
-├── day-13/
-│   ├── app.py
-│   ├── templates/
-│   │   └── index.html
-│   ├── static/
-│   │   ├── script.js
-│   │   └── fallback.mp3
-│   ├── requirements.txt
-│   └── .env
-... (other day folders)
-
+day-13/
+├── app.py                 # Python backend (Flask/FastAPI)
+├── templates/
+│   └── index.html         # HTML frontend
+├── static/
+│   ├── style.css          # CSS file for styling
+│   ├── script.js          # JavaScript functionality
+│   └── fallback.mp3       # Fallback audio file
+├── requirements.txt       # Python dependencies
+└── .env                   # Environment variables
 
 ```
 
