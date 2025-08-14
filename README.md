@@ -199,4 +199,5 @@ Include screenshots of your updated UI. -->
 ✅The AI will transcribe your speech, generate a response, and play audio automatically.
 
 ✅Your conversation history is displayed in the transcript box.
+
 ---
