@@ -1,0 +1,371 @@
+/* General body and typography */
+body {
+  font-family: 'Inter', sans-serif;
+  background: #010813;
+  margin: 0;
+  padding: 0; /* Added top & bottom padding */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  justify-content: flex-start;
+  color: #060606;
+}
+
+.intro-text {
+  font-size: 32px;
+  color: #f1eeee;
+  max-width: 600px;
+  text-align: center;
+  margin-bottom: 30px;
+  padding: 0 20px;
+  font-weight: 600;
+  line-height: 1.3;
+}
+
+/* Containers */
+.container{
+  background: #d5fc47;
+  padding: 30px 40px;
+  border-radius: 16px;
+  /* box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15); */
+  width: 100%;
+  max-width: 600px;
+  margin-top: 30px;
+  box-sizing: border-box;
+  text-align: center;
+  background-color: transparent !important;
+  height: 100vh;
+  margin: 0;
+}
+
+/* Text to Speech Header */
+h2 {
+  margin-bottom: 25px;
+  color: #222;
+  font-weight: 700;
+  font-size: 28px;
+}
+
+/* Form Styling */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+input[type="text"] {
+  padding: 14px 18px;
+  font-size: 18px;
+  border-radius: 8px;
+  border: 2px solid #e05858;
+  outline: none;
+  transition: 0.3s;
+  font-weight: 500;
+}
+
+input[type="text"]:focus {
+  border-color: #0077ff;
+  box-shadow: 0 0 8px rgba(0, 119, 255, 0.35);
+}
+
+/* Buttons */
+button {
+  padding: 14px 20px;
+  background-color: #0077ff;
+  color: white;
+  font-size: 18px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-weight: 600;
+  box-shadow: 0 4px 12px rgba(0, 119, 255, 0.4);
+}
+
+button:hover {
+  background-color: #7de156;
+  box-shadow: 0 6px 16px rgba(125, 225, 86, 0.6);
+}
+
+/* Audio container */
+#audioContainer {
+  margin-top: 30px;
+}
+
+/* Audio element */
+audio {
+  width: 100%;
+  outline: none;
+  border-radius: 8px;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.15);
+}
+
+/* Error messages */
+p {
+  color: red;
+  font-weight: 600;
+  margin-top: 15px;
+}
+
+/* Echo Bot Section */
+#echo-bot {
+  
+  margin: 63px auto;
+  padding: 25px 35px;
+  border-radius: 16px;
+  text-align: left;
+  font-family: 'Inter', sans-serif;
+  height: 70vh;
+  max-width: 900px;
+  width: 90vw;
+  background: #eaf2fb;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.12);
+  color: #222;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  margin-left: -196px;
+}
+
+/* Echo Bot Header */
+#echo-bot h1 {
+  margin-bottom: 10px;
+  font-weight: 700;
+  font-size: 32px;
+  color: #004a99;
+  text-align: center;
+}
+
+/* Echo Bot Subtitle */
+#echo-bot p {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 25px;
+  color: #004a99;
+  text-align: center;
+}
+
+/* Flex Row */
+.row {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  gap: 25px;
+  flex-grow: 1;
+  box-sizing: border-box;
+}
+
+/* Left Column - voice-recorder */
+.left {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  box-sizing: border-box;
+}
+
+/* Right Column - transcription textarea */
+.right {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  box-sizing: border-box;
+}
+
+/* Buttons inside echo-bot */
+#echo-bot button {
+  padding: 14px 18px;
+  margin: 10px 0;
+  font-size: 18px;
+  width: 100%;
+  max-width: 220px;
+  border-radius: 10px;
+  font-weight: 600;
+  box-shadow: 0 4px 12px rgba(0, 74, 153, 0.3);
+  transition: background-color 0.3s ease;
+  cursor: pointer;
+}
+
+#startBtn {
+  background-color: #004a99;
+  color: white;
+}
+
+#startBtn:hover {
+  background-color: #003366;
+}
+
+#stopBtn {
+  background-color: #cc0000;
+  color: white;
+}
+
+#stopBtn:hover {
+  background-color: #990000;
+}
+
+/* Audio playback */
+#audioPlayback {
+  display: block;
+  margin-top: 25px;
+  width: 100%;
+  max-width: 300px;
+  border-radius: 10px;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.15);
+}
+
+/* Transcription Textarea */
+textarea#transcriptionResult {
+  width: 100%;
+  max-width: 100%;
+  padding: 14px 18px;
+  font-size: 18px;
+  border-radius: 10px;
+  border: 2px solid #ccc;
+  resize: none;
+  min-height: 400px;
+  font-weight: 600;
+  box-shadow: inset 0 2px 6px rgba(0,0,0,0.1);
+  font-family: 'Inter', sans-serif;
+}
+
+/* Responsive for smaller screens */
+@media (max-width: 768px) {
+  #echo-bot {
+    width: 95vw;
+    height: auto;
+    padding: 20px 25px;
+  }
+  .row {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .left, .right {
+    width: 100%;
+  }
+  #audioPlayback {
+    max-width: 100%;
+  }
+  textarea#transcriptionResult {
+    min-height: 250px;
+  }
+  button {
+    max-width: 100%;
+  }
+  .container1, .container2 {
+    max-width: 95vw;
+  }
+}
+
+/* Record button animation */
+#recordBtn.recording {
+  animation: pulse 1s infinite;
+  background-color: #cc0000 !important;
+  color: white !important;
+}
+
+@keyframes pulse {
+  0% { transform: scale(1); box-shadow: 0 0 5px #cc0000; }
+  50% { transform: scale(1.1); box-shadow: 0 0 15px #ff3333; }
+  100% { transform: scale(1); box-shadow: 0 0 5px #cc0000; }
+}
+
+/* ==== NEW-GEN AI LOOK ADD-ON ==== */
+
+/* Animated gradient background */
+body::before {
+  content: "";
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  /* background: linear-gradient(-45deg, #0f172a, #1e293b, #334155, #0ea5e9); */
+  background-size: 400% 400%;
+  animation: gradientBG 12s ease infinite;
+  z-index: -2;
+}
+
+@keyframes gradientBG {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+/* Frosted glass effect for main container */
+#echo-bot {
+  background: rgba(23, 102, 145, 0.08) !important;
+  backdrop-filter: blur(15px);
+  border: 1px solid rgba(255,255,255,0.1);
+  color: white;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.4);
+  animation: fadeIn 0.8s ease forwards;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(15px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* AI Voice Agent heading glow */
+#echo-bot h1 {
+  color: #38bdf8 !important;
+  text-shadow: 0 0 10px rgba(56,189,248,0.7),
+               0 0 20px rgba(56,189,248,0.5);
+}
+
+/* Subheading styling */
+#echo-bot p {
+  color: #eff1f4 !important;
+}
+
+/* Recording button glow effect */
+#recordBtn {
+  background: linear-gradient(90deg, #0ea5e9, #3b82f6);
+  border: none;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+#recordBtn:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 20px rgba(14,165,233,0.7);
+}
+
+/* Animated pulse when recording */
+#recordBtn.recording {
+  background: linear-gradient(90deg, #ef4444, #f97316) !important;
+  box-shadow: 0 0 20px rgba(239,68,68,0.7);
+  animation: pulseGlow 1s infinite;
+}
+
+@keyframes pulseGlow {
+  0% { transform: scale(1); box-shadow: 0 0 10px rgba(239,68,68,0.6); }
+  50% { transform: scale(1.08); box-shadow: 0 0 25px rgba(249,115,22,0.9); }
+  100% { transform: scale(1); box-shadow: 0 0 10px rgba(239,68,68,0.6); }
+}
+
+/* Textarea as chat bubble */
+textarea#transcriptionResult {
+  background: rgba(255,255,255,0.05);
+  border: 1px solid rgba(255,255,255,0.2);
+  color: #f1f5f9;
+  font-weight: 400;
+}
+
+/* Scrollbar style */
+textarea#transcriptionResult::-webkit-scrollbar {
+  width: 6px;
+}
+textarea#transcriptionResult::-webkit-scrollbar-thumb {
+  background: rgba(255,255,255,0.3);
+  border-radius: 4px;
+}
+
+/* Audio player restyle */
+#audioPlayback {
+  background: rgba(255,255,255,0.08);
+  border-radius: 8px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.4);
+}
+

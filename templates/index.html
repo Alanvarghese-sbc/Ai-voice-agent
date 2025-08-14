@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Text to Speech - Murf</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/static/style.css">
+  <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" /> -->
+
+</head>
+<body>
+  
+   <div class="container">
+    <section id="echo-bot">
+      <h1>🎤 AI Voice Agent</h1>
+      <p>Talk to your agent and get instant responses!</p>
+      <div class="row">
+        <div class="voice-recorder left">
+          <button id="recordBtn">🎙️ Start Recording</button>
+          <audio id="audioPlayback" controls style="display: none;"></audio>
+        </div>
+        <textarea id="transcriptionResult" readonly class="right" rows="10" cols="80" placeholder="Transcript will appear here..."></textarea>
+      </div>
+    </section>
+  </div>
+  
+  
+  <script src="/static/script.js"></script>
+    </body>
+</html>
