@@ -1,0 +1,26 @@
+# FastAPI web framework
+fastapi==0.111.0
+
+# ASGI server to run FastAPI
+uvicorn==0.23.2
+
+# Environment variable management
+python-dotenv==1.0.0
+
+# HTTP requests to external APIs (Murf, AssemblyAI, Gemini, etc.)
+requests==2.31.0
+
+# Data validation & models for FastAPI
+pydantic==1.10.12
+
+# Async file handling (optional, for uploading audio files)
+aiofiles==23.2.1
+
+# WebSocket support for real-time streaming (optional)
+websockets==11.0.3
+
+# Audio processing (optional, if using local audio handling)
+pydub==0.25.1
+
+# Optional: numpy for audio or AI-related calculations
+numpy==1.26.0

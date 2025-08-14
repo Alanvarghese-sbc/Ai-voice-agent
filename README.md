@@ -48,7 +48,7 @@ It’s a **fully functional conversational AI agent** that listens to voice inpu
 git clone https://github.com/YOUR_USERNAME/YOUR_REPO_NAME.git
 cd YOUR_REPO_NAME -->
 
-# AI Voice Agent – 30 Days Challenge
+# AI Voice Agent 
 
 ## Overview
 This project is part of the **30 Days of AI Voice Agents** challenge.  
@@ -132,7 +132,6 @@ git clone https://github.com/<username>/<repo-name>.git
 cd <repo-name>
 ```
 
-
 ### 2. Create a virtual environment
 ```bash
 python -m venv venv
@@ -156,27 +155,48 @@ ASSEMBLY_API_KEY=your_assemblyai_api_key
 GEMINI_API_KEY=your_gemini_api_key
 ```
 
-5. Run the FastAPI server
+### 5. Run the FastAPI server
 ```bash
 uvicorn app:app --reload
 ```
 
-6. Open the frontend
+### 6. Open your browser and visit
+```bash
+ http://localhost:8000. 
 
-Open index.html in your browser.
+```
+---
 
-Screenshots
+## 📂 Project Structure
+```bash
+30-days-of-voice-agents
+├── day-13/
+│   ├── app.py
+│   ├── templates/
+│   │   └── index.html
+│   ├── static/
+│   │   ├── script.js
+│   │   └── fallback.mp3
+│   ├── requirements.txt
+│   └── .env
+... (other day folders)
 
-Include screenshots of your updated UI.
 
-Capture recording button animations and audio playback.
+```
 
-Usage
+<!-- Screenshots
 
-Click the 🎙️ Start Recording button to speak to the AI.
+Include screenshots of your updated UI. -->
 
-Stop recording by clicking the ⏹️ Stop Recording button.
+<!-- Capture recording button animations and audio playback. -->
+---
+## Usage
 
-The AI will transcribe your speech, generate a response, and play audio automatically.
+✅Click the 🎙️ Start Recording button to speak to the AI.
 
-Your conversation history is displayed in the transcript box.
+✅Stop recording by clicking the ⏹️ Stop Recording button.
+
+✅The AI will transcribe your speech, generate a response, and play audio automatically.
+
+✅Your conversation history is displayed in the transcript box.
+---
