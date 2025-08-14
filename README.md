@@ -102,6 +102,7 @@ This challenge helped me explore **voice interfaces, AI APIs, and modern fronten
 ---
 
 ## Project Architecture
+```bash
 
 User (Browser)
 │
@@ -117,6 +118,8 @@ Backend (FastAPI)
 │ └─> Murf → Convert AI response to speech
 │
 └─> Return transcription & audio URL to frontend
+
+```
 
 
 ---
@@ -153,17 +156,14 @@ ASSEMBLY_API_KEY=your_assemblyai_api_key
 GEMINI_API_KEY=your_gemini_api_key
 ```
 
-
-Important: Do not commit .env to GitHub. Ensure it’s listed in .gitignore.
-
 5. Run the FastAPI server
+```bash
 uvicorn app:app --reload
+```
 
 6. Open the frontend
 
 Open index.html in your browser.
-
-Recommended browsers: Chrome or Edge for microphone support.
 
 Screenshots
 
